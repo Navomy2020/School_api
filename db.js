@@ -1,22 +1,20 @@
-import mysql from "mysql2";
+import mysql from "mysql2/promise";
 import dotenv from "dotenv";
+import fs from "fs";
 
 dotenv.config();
 
-const db = mysql.createConnection({
+const db = await mysql.createConnection({
   host: process.env.DB_HOST,
   user: process.env.DB_USER,
-  password: process.env.DB_PASSWORD,
+  password: process.env.DB_PASS,
   database: process.env.DB_NAME,
-  port: process.env.DB_PORT
-});
-
-db.connect((err) => {
-  if (err) {
-    console.error("DB connection failed:", err);
-  } else {
-    console.log("Connected to MySQL ✅");
+  port: process.env.DB_PORT,
+  ssl: {
+    ca: fs.readFileSync("./ca.pem", "utf8")
   }
 });
+
+console.log("Connected to MySQL ✅");
 
 export default db;
