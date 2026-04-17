@@ -92,9 +92,10 @@ CREATE TABLE schools (
 
     node index.js
 
-Server runs on:
+Server runs locally on:
 
     http://localhost:3000
+[Live API](https://school-api-et5p.onrender.com)
 
 ------------------------------------------------------------------------
 
