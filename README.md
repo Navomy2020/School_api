@@ -95,7 +95,10 @@ CREATE TABLE schools (
 Server runs locally on:
 
     http://localhost:3000
-[Live API](https://school-api-et5p.onrender.com)
+
+Live Server:
+  
+  https://school-api-et5p.onrender.com
 
 ------------------------------------------------------------------------
 
