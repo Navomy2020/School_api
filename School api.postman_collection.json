@@ -33,7 +33,99 @@
           ]
         }
       },
-      "response": []
+      "response": [
+        {
+          "name": "Add School",
+          "originalRequest": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"name\": \"Riverdale Public School\",\r\n  \"address\": \"Panampilly Nagar, Kochi\",\r\n  \"latitude\": 9.9495,\r\n  \"longitude\": 76.2896\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://school-api-et5p.onrender.com/addSchool",
+              "protocol": "https",
+              "host": [
+                "school-api-et5p",
+                "onrender",
+                "com"
+              ],
+              "path": [
+                "addSchool"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "Date",
+              "value": "Fri, 17 Apr 2026 01:42:41 GMT"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "Content-Length",
+              "value": "46"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "Content-Encoding",
+              "value": "br"
+            },
+            {
+              "key": "etag",
+              "value": "W/\"2e-R8FlciyJP/QbtijVtEhbzSGmWsU\""
+            },
+            {
+              "key": "rndr-id",
+              "value": "b6857fa7-1542-40cf"
+            },
+            {
+              "key": "vary",
+              "value": "Accept-Encoding"
+            },
+            {
+              "key": "x-powered-by",
+              "value": "Express"
+            },
+            {
+              "key": "x-render-origin-server",
+              "value": "Render"
+            },
+            {
+              "key": "cf-cache-status",
+              "value": "DYNAMIC"
+            },
+            {
+              "key": "Server",
+              "value": "cloudflare"
+            },
+            {
+              "key": "CF-RAY",
+              "value": "9ed7bc080b873e2b-SIN"
+            },
+            {
+              "key": "alt-svc",
+              "value": "h3=\":443\"; ma=86400"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"message\": \"School added successfully\",\n    \"id\": 7\n}"
+        }
+      ]
     },
     {
       "name": "\\LIst School",
@@ -72,6 +164,107 @@
             }
           ]
         }
+      },
+      "response": [
+        {
+          "name": "\\LIst School",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://school-api-et5p.onrender.com/listSchools?latitude=10.0277&longitude=76.3087",
+              "protocol": "https",
+              "host": [
+                "school-api-et5p",
+                "onrender",
+                "com"
+              ],
+              "path": [
+                "listSchools"
+              ],
+              "query": [
+                {
+                  "key": "latitude",
+                  "value": "10.0277"
+                },
+                {
+                  "key": "longitude",
+                  "value": "76.3087"
+                }
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "Date",
+              "value": "Fri, 17 Apr 2026 01:43:26 GMT"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "Content-Length",
+              "value": "262"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "Content-Encoding",
+              "value": "br"
+            },
+            {
+              "key": "etag",
+              "value": "W/\"271-xTjPFNy21EtuvUhxyzWql134/hw\""
+            },
+            {
+              "key": "rndr-id",
+              "value": "282e796d-ad62-4e9c"
+            },
+            {
+              "key": "vary",
+              "value": "Accept-Encoding"
+            },
+            {
+              "key": "x-powered-by",
+              "value": "Express"
+            },
+            {
+              "key": "x-render-origin-server",
+              "value": "Render"
+            },
+            {
+              "key": "cf-cache-status",
+              "value": "DYNAMIC"
+            },
+            {
+              "key": "Server",
+              "value": "cloudflare"
+            },
+            {
+              "key": "CF-RAY",
+              "value": "9ed7bd252f9f3e2b-SIN"
+            },
+            {
+              "key": "alt-svc",
+              "value": "h3=\":443\"; ma=86400"
+            }
+          ],
+          "cookie": [],
+          "body": "[\n    {\n        \"id\": 1,\n        \"name\": \"Green Valley High School\",\n        \"address\": \"Edappally, Kochi\",\n        \"latitude\": 10.0277,\n        \"longitude\": 76.3089,\n        \"distance\": 0.02\n    },\n    {\n        \"id\": 3,\n        \"name\": \"Knowledge Park School\",\n        \"address\": \"Kaloor, Kochi\",\n        \"latitude\": 9.9983,\n        \"longitude\": 76.292,\n        \"distance\": 3.75\n    },\n    {\n        \"id\": 6,\n        \"name\": \"St. Mary's Public School\",\n        \"address\": \"Kakkanad, Kochi\",\n        \"latitude\": 10.0159,\n        \"longitude\": 76.3419,\n        \"distance\": 3.87\n    },\n    {\n        \"id\": 7,\n        \"name\": \"Riverdale Public School\",\n        \"address\": \"Panampilly Nagar, Kochi\",\n        \"latitude\": 9.9495,\n        \"longitude\": 76.2896,\n        \"distance\": 8.94\n    },\n    {\n        \"id\": 2,\n        \"name\": \"Hilltop Public School\",\n        \"address\": \"Thrippunithura\",\n        \"latitude\": 9.9485,\n        \"longitude\": 76.349,\n        \"distance\": 9.85\n    }\n]"
+        }
+      ]
+    },
+    {
+      "name": "New Request",
+      "request": {
+        "method": "GET",
+        "header": []
       },
       "response": []
     }
