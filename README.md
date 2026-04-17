@@ -170,7 +170,7 @@ The Postman collection is included in this repository:
 ## 🌍 Deployment
 
 Live API:\
-(Add your Render deployment link here)
+https://school-api-et5p.onrender.com
 
 ------------------------------------------------------------------------
 
